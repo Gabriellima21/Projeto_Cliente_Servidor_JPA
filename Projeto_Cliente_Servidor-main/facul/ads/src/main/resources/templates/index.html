@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/apresentacao.css}">
+    <link rel="icon" th:href="@{/imagens/8756253.gif}" />
+
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link th:href="@{https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css}"
+          rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
+
+    <title>Apresentação</title>
+</head>
+
+<body>
+
+<div class="grupo">
+    <h1>Grupo de Desenvolvimento:</h1>
+
+    <p>Gabriel Donizete - RGM: 29124727 </p>
+    <p>Julio Cesar do Amaral Francisco - RGM: 29764076</p>
+    <p>Leonardo Ferreira da Silva - RGM: 29565677</p>
+</div>
+
+<div class="corpoapresentacao">
+    <h2>Descrição do Projeto:</h2>
+    <p>&nbsp;&nbsp;Nosso projeto é referente a uma academia. Oferecemos informações sobre exercícios a serem feitos
+        para ajudar os usuários a atingirem seus objetivos de condicionamento físico.</p>
+
+    <h2>Instruções de Acesso e Uso:</h2>
+    <p>&nbsp;&nbsp;Para acessar nossa plataforma e aproveitar ao máximo, siga estas instruções:</p>
+
+    <h3>Rota de Padrão:</h3>
+    <p>&nbsp; &nbsp;Acesse a página padrão/inicial (<span th:text="@{http://localhost:3500}"></span>) onde estará
+        informando os integrantes do grupo, descrição do projeto e como utilizá-lo.</p>
+
+    <h3>Rota Apresentação:</h3>
+    <p>&nbsp; &nbsp;Acesse a página apresentacao(<span th:text="@{http://localhost:3500/apresentacao}"></span>) onde estará
+        a apresentação (tela inicial do projeto).</p>
+
+    <h3>Rota de Exercícios:</h3>
+    <p>&nbsp; &nbsp;Acesse a página de exercícios (<span th:text="@{http://localhost:3500/exercicio}"></span>)
+        para exibir todas as rotinas de treinamento.</p>
+
+    <h3>Rota de Exercícios com ID:</h3>
+    <p>&nbsp;&nbsp; Acesse a página de exercícios (<span th:text="@{http://localhost:3500/exercicio/1}"></span>)
+        URL recebendo o parâmetro {id} irá exibir apenas o exercicio de supino.
+    </p>
+</div>
+
+<br/><br/><br/>
+</body>
+<footer>
+
+</footer>
+</body>
+
+</html>
